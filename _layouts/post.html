@@ -7,7 +7,12 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
-
+  <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+  {% for tag in page.tags %}
+    <span class="cartouche complementary xs">{{ tag }}</span>
+  {% endfor %}
+  <p>{{ post.excerpt }}</p>
+  <hr>
   <article class="post-content">
     {{ content }}
   </article>

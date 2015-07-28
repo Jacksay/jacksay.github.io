@@ -1,22 +1,61 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Utiliser les boucles et les tableaux dans SASS"
 date:   2015-07-22 12:55:45
-categories: jekyll update
+categories: "integration-web"
+tags: sass
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+L'utilisation du pré-processeur CSS [SASS][sass] permet de coordonner l'utilisation des boucles et de tableaux de données pour automatiser la production de règles CSS.
 
-Jekyll also offers powerful support for code snippets:
+<!-- more -->
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+# Les tableaux dans SASS
+
+Pour créer des *listes de données dans SASS*, il suffit d'affecter les valeurs à une variables en les séparant par des espaces :
+
+```sass
+// liste des noms de couleurs
+$colorsName: rouge vert bleu;
+
+// Liste des valeurs
+$colorsValue: #ff0000 #00ff00 #0000ff;
+```
+
+Nous venons de créer 2 listes contenant chaqu'une 3 valeurs.
+
+# Parcourir une liste avec une boucle dans SASS
+
+La boucle `@each` permet de parcourir une (ou plusieurs) liste :
+
+```sass
+// liste des noms de couleurs
+$colorsName: rouge vert bleu;
+
+// Liste des valeurs
+$colorsValue: #ff0000 #00ff00 #0000ff;
+
+@for $i from 1 through length($colorsName){
+  .color-#{nth($colorsName,$i)} {
+    background-color: nth($colorsValue, $i);
+  }
+}
+```
+
+Nous obtenons :
+
+```css
+.color-rouge {
+  background-color: #ff0000;
+}
+.color-vert {
+  background-color: #00ff00;
+}
+.color-bleu {
+  background-color: #0000ff;
+}
+
+```
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 

@@ -1,0 +1,23 @@
+{
+  "name": "jacksay.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Jacksay/jacksay.github.io",
+  "authors": [
+    "Stéphane Bouvry <stephane.bouvry@unicaen.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "open-sans": "~1.1.0",
+    "bootstrap-lnf": "https://github.com/Jacksay/bootstrap-lnf.git",
+    "bootstrap": "~3.3.5"
+  }
+}
