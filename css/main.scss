@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import url(http://fonts.googleapis.com/css?family=Anton);
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -10,22 +10,33 @@
         "syntax-highlighting"
 ;
 
-$color: #ff6600;
+$color: #ff9900;
 
 body {
   font-family: "Open sans";
   font-size: 16px;
-  background: #222;
-  color: #000000;
+  background: #fdfdfd;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #999;  
 }
 
 h1 {
-  color: #000;
-  font-weight: 100;
-  font-size: 5em;
-  border-left: 1px #000 solid;
+  font-family: Anton;
+  font-size: 48px;
+  border-left: 8px #ccc solid;
   padding-left: 8px;
-  text-shadow: 0 0 150px rgba(255,255,255,.5), -1px 1px 1px rgba(255,255,255,.3), 1px -1px 1px rgba(0,0,0,.8);
+  margin-top: 32px;
+}
+
+h2 {
+
+}
+
+h3 {
+
 }
 
 .banner /* bruce ? */ {
