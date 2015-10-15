@@ -10,25 +10,31 @@
         "syntax-highlighting"
 ;
 
-$color: #ff9900;
+$color: #990000;
+$dark: #767777;
 
 body {
   font-family: "Open sans";
-  font-size: 16px;
+  font-size: 20px;
   background: #fdfdfd;
-  color: #333;
+  color: $dark;
+}
+
+a {
+  color: $color;
 }
 
 h1, h2, h3 {
-  color: #999;  
+  color: lighten($dark, 30%);  
 }
 
 h1 {
   font-family: Anton;
   font-size: 48px;
-  border-left: 8px #ccc solid;
+  border-left: 8px lighten($dark, 40%) solid;
+  border-bottom: thin lighten($dark, 40%) solid;
   padding-left: 8px;
-  margin-top: 32px;
+  margin-top: 2em;
 }
 
 h2 {
@@ -39,20 +45,38 @@ h3 {
 
 }
 
-.banner /* bruce ? */ {
-  background: #111;
+.post-header {
+  h1 {
+    border-left: none;
+    text-align: center;
+    font-size: 5em;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.post-content {
+  padding: 0 2rem;
+  h1 {
+    margin-left: -2rem;
+  }
+}
+
+.banner /*! bruce ? */ {
+  background: #ddd;
   padding: 3em 0;
-  border-bottom: dotted 8px #222;
+  border-bottom: dotted 1px #ddd;
   text-align: center;
   h1 {
     font-size: 8em;
-    text-shadow: 0 0 150px rgba(255,255,255,.5), -1px 1px 1px rgba(255,255,255,.3), 1px -1px 1px rgba(0,0,0,.8);
-    color: #010101;
+    text-shadow: 0 0 150px rgba(255,255,255,.9), -1px 1px 1px rgba(255,255,255,.3), 1px -1px 1px rgba(0,0,0,.8);
+    color: #999;
+    border-left: none;
     span {
-      color: darken($color, 40%);
+      color: lighten($color, 60%);
     }
   }
   .baseline {
-    color: #ff6600;
+    color: $color;
   }
 }
