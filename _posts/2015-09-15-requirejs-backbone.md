@@ -8,6 +8,8 @@ tags: requirejs javascript webapp amd
 
 Cette article s'appuit sur l'hypothèse que vous avez des connaissances minimales en Javascript et que vous avez déjà développé des scripts Javascript complexe ; une logique forte que vous avez décomposé dans plusieurs fichiers.
 
+<!-- more -->
+
 # Débuter avec RequireJS ?
 
 **RequireJS** est une librairie javascript qui va vous permettre d'optimiser le chargement des fichiers javascript de votre site ou de votre application web. Son principal interêt est de favoriser la décomposition de votre code en petits modules indépendants en ne chargeant que les fichiers requis.
