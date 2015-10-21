@@ -3,6 +3,7 @@ layout: post
 title:  "Utiliser Require JS pour optimiser le chargement de ces fichiers Javascript"
 date:   2015-09-15
 categories: "ui"
+author: Stéphane Bouvry
 tags: requirejs javascript webapp amd
 ---
 

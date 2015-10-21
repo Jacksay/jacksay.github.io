@@ -3,6 +3,7 @@ layout: post
 title:  "PHPUnit, l'erreur header already sent"
 date:   2015-10-19
 categories: "php"
+author: Stéphane Bouvry
 tags: phpunit bug
 ---
 

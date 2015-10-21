@@ -2,8 +2,8 @@
 layout: post
 title: "Comment mettre une ombre sur le texte avec CSS 3 ?"
 date: 2015-07-24
-keywords: [ombre CSS,text-shadow]
-categories: [CSS,Web Design]
+tags: [text-shadow, CSS3, ombre portée, lueur]
+author: Stéphane Bouvry
 ---
 
 Parmi les nouvelles fonctionnalités que nous offres CSS 3, la propriété `text-shadow` permet de placer une ou plusieurs ombres sur le texte.
