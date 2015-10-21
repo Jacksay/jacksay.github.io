@@ -25,7 +25,7 @@ a {
 }
 
 h1, h2, h3 {
-  color: lighten($dark, 30%);  
+  color: lighten($dark, 30%);
 }
 
 h1 {
@@ -79,4 +79,18 @@ h3 {
   .baseline {
     color: $color;
   }
+}
+.metas {
+  width: 80%;
+  margin: 0 auto;
+  .tag {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: .75em;
+    border-radius: 4px;
+    background: #999;
+    color: white;
+    text-shadow: -1px 1px 0 rgba(0,0,0,.5);
+  }
+
 }
