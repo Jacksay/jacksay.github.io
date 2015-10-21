@@ -2,20 +2,21 @@
 
   <div class="container">
 
-    <h2 class="heading">{{ site.title }}</h2>
+    <p class="text-center">{{ site.title }} - Cours et tutoriaux pour le développement web</p>
 
-    <div class="col-md-4">
+    <div class="col-md-6">
+      <h3>Me suivre</h3>
+      <ul>
+        <li>RSS : <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Flux RSS</a></li>
+        <li>Github :<a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></li>
+        <li>Twitter :<a href="https://twitter.com/{{ site.twitter_username }}">{{ site.twitter_username }}</a></li>
+      </ul>
       <h3>Me contacter</h3>
       <ul>
-        <li>{{ site.title }}</li>
-        <li>Mon email professionnel : <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li>Mon email personnel : <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li>Mon numéro de téléphone : <a type="tel">0231565085</a></li>
-        <li>Github :<a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></li>
+        <li><i class="icon-mail"></i> Courriel : <strong>jacksay[arobaze]jacksay[point]com</strong></li>
       </ul>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sapiente, recusandae velit, vero ducimus libero delectus error placeat sunt, officia, nemo impedit voluptas iure ullam alias maiores! Atque iste, id?
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <h3>Liens inutiles</h3>
       <ul>
         <li>
@@ -24,19 +25,8 @@
           </a> : Site contenant quelques articles sur le développement web ainsi que les supports de cours complets de la <strong>formation Webdesigner du centre de formation Catherine Souami à Caen</strong>.
         </li>
       </ul>
-      <p><i>Ce liens sont ici pour satisfaire les besoins de nos amis(?) les moteurs de recherche... fait ton travail prémise de Skynet&copy; !</i></p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sapiente, recusandae velit, vero ducimus libero delectus error placeat sunt, officia, nemo impedit voluptas iure ullam alias maiores! Atque iste, id?
-    </div>
-    <div class="col-md-4">
-      <h3>Informations</h3>
-      <p>Information complémentaires non-necessaires</p>
-      {{ site.description }}
     </div>
   </div>
-</footer>
-<footer class="bg-primary-grey site-footer">
+  <p class="text-center mention">Copyright &copy; 2000-2015 Jacksay.com, Ne conviens pas aux enfants de moins de 18 mois, Ne pas avalez, fumer ou jeter sur la voie publique.</p>
 
-  <div class="container">
-    <p class="text-center mention">Copyright &copy; 2000-2015 Jacksay.com, Ne conviens pas aux enfants de moins de 18 mois, Ne pas avalez, fumer ou jeter sur la voie publique.</p>
-  </div>
 </footer>
