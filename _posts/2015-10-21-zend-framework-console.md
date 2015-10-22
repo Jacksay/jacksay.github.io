@@ -3,6 +3,7 @@ layout: post
 title: "Créer ces propres utilitaires en ligne de commande dans Zend Framework 2"
 date: 2015-10-21
 tags: [Zend Framework, Console]
+category: PHP
 author: Stéphane Bouvry
 ---
 
@@ -81,3 +82,7 @@ Voilà, il vous suffit maintenant d'ouvrire un terminal, de vous rendre à la ra
 ```bash
 php public/index.php macommande
 ```
+
+# Utiliser les flags
+
+Comme d'autres utilitaires en ligne de commande

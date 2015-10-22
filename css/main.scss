@@ -12,6 +12,9 @@
 
 $color: #990000;
 $dark: #767777;
+$medium: lighten($dark, 15%);
+$light: lighten($dark, 30%);
+$ultralight: lighten($light, 15%);
 
 body {
   font-family: "Open sans";
@@ -47,6 +50,24 @@ h3 {
 
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// MENU
+.site-header {
+  line-height: 3em;
+  border-bottom: thin $light solid;
+  box-shadow: 0 .5em 1em rgba(0,0,0,.1);
+  font-size: .8em;
+  .portrait {
+    border-radius: 100%;
+    width: 2.5em;
+  }
+}
+
+.circle {
+  border-radius: 100%
+}
+
+
 .post-list {
   background: white;
   padding: 1em;
@@ -62,6 +83,7 @@ h3 {
 }
 
 .post-header {
+
   h1 {
     border-left: none;
     text-align: center;
@@ -69,7 +91,8 @@ h3 {
     max-width: 75%;
     margin: 0 auto;
   }
-  margin-bottom: 3em;
+  padding: 1em 1em 3em;
+  background-color: lighten($light, 15%);
 }
 
 .post-content {
@@ -110,7 +133,21 @@ h3 {
 .metas {
   width: 80%;
   margin: 0 auto;
-  .tag {
+  font-weight: 100;
+  border-bottom: $ultralight solid thin;
+  line-height: 2em;
+  .meta {
+    color: $light;
+    .value {
+      color: $medium;
+      font-weight: 600;
+    }
+    &:after {
+      content: ' ~ ';
+    }
+  }
+
+  /*.tag {
     display: inline-block;
     padding: 2px 4px;
     font-size: .75em;
@@ -118,6 +155,25 @@ h3 {
     background: #aaa;
     color: white;
     text-shadow: -1px 1px 0 rgba(0,0,0,.5);
-  }
-
+  }*/
 }
+
+/*
+.author {
+  background: #fff;
+  img, strong {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  strong::before {
+    font-weight: 300;
+    display: block;
+    font-size: .8em;
+    color: $light;
+    content: 'Rédiger par';
+  }
+  img {
+    width: 100px;
+  }
+}*/

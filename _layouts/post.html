@@ -1,14 +1,22 @@
 ---
 layout: default
 ---
-<div class="post container">
+<div class="post {{page.category | slugify}} {% for tag in page.tags %} tag-{{ tag | slugify }}{% endfor %}">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+
+    <div class="full">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+    <div class="container">
+
+
 
     <div class="metas">
+      
       <div class="author">
-        Rédigé par : <strong>{{ page.author }}</strong>
+        <img class="circle" src="{{ '/images/jacksay.jpg' | prepend: site.baseurl}}" />
+        <strong>{{ page.author }}</strong>
       </div>
 
       <div class="publish">
@@ -22,14 +30,16 @@ layout: default
       {% endfor %}
       </div>
     </div>
+    </div>
   </header>
 
-  <article class="post-content">
+
+  <article class="post-content container">
     {{ content }}
   </article>
 
-  <section id="comments">
-    <div id="disqus_thread"></div>
+  <section id="comments" class="container">
+    <div id="disqus_thread" class="push-md-2 col-md-10"></div>
 <script>
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.

@@ -7,6 +7,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: studiojacksay
 github_username:  jacksay
 author: Jacksay
+paginate: 5
 
 # Build settings
 markdown: redcarpet
