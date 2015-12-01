@@ -12,3 +12,14 @@ paginate: 5
 # Build settings
 markdown: redcarpet
 highlighter: pygments
+
+# Collection
+collections:
+    slides:
+        output: true
+defaults:
+  - scope:
+      path: ""
+      type: slides
+    values:
+      layout: slide
