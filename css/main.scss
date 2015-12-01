@@ -102,6 +102,15 @@ h3 {
   }
 }
 
+p>img {
+   display: block;
+   width: auto;
+   max-width: 100%;
+   border: 4px solid #FFF;
+   margin: 1.5em auto;
+   box-shadow: -2px 2px 4px rgba(0,0,0,.1);
+}
+
 .site-footer {
   text-shadow: 1px -1px 0 rgba(255,255,255,.5);
   margin-top: 2em;
