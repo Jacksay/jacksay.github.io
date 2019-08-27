@@ -6,8 +6,6 @@ categories: "développement-web"
 tags: php composer exception
 ---
 
-# Composer : Exception SSL
-
 En tentant de réaliser une mise à jour de mes paquets PHP via *composer*, j'ai obtenu ce message d'erreur :
 
 ```
@@ -17,6 +15,10 @@ En tentant de réaliser une mise à jour de mes paquets PHP via *composer*, j'ai
   Failed to enable crypto
   failed to open stream: operation failed
 ```
+
+---
+
+## Vérifier l'extension SSL sur PHP
 
 Après recherche, j'ai **vérifier que SSL était bien disponible sur PHP** avec la commande :
 
@@ -46,6 +48,8 @@ On demande un petit diagnostique à composer avec la commande :
 ```bash
 composer diagnose
 ```
+
+## Vérifier le proxy
 
 Et là on voit que le check sur le proxy ne passe pas :
 
